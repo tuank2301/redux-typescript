@@ -1,0 +1,51 @@
+.home {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+      to right,
+      rgba($clr-black, 0.9),
+      rgba($clr-black, 0.3)
+    ),
+    url('../images/person/person-1.png') center top/cover;
+
+  &__container {
+    padding-bottom: 6rem;
+
+    h2,
+    h3 {
+      color: $clr-white;
+      text-transform: capitalize;
+    }
+
+    h2 {
+      font-size: 6rem;
+      font-weight: 500;
+    }
+
+    h3 {
+      font-weight: normal;
+      font-size: 1.5rem;
+      margin-bottom: -1rem;
+    }
+
+    .underline {
+      width: 100vw;
+      border: 1px solid $clr-white;
+      margin-bottom: 1rem;
+    }
+
+    span {
+      color: $clr-orange;
+      font-weight: 700;
+    }
+
+    h5 {
+      color: $clr-white;
+      text-transform: capitalize;
+      font-size: 1.5rem;
+    }
+  }
+}

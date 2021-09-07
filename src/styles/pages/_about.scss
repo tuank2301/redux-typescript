@@ -1,0 +1,44 @@
+.about {
+  height: 60%;
+  width: 100%;
+  background: $clr-black;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 0;
+
+  &__job {
+    width: 70vw;
+    background: #414141;
+    color: $clr-white;
+    display: block;
+    text-align: left;
+    border-bottom: 0.5rem solid $clr-orange;
+    padding: 0.5rem;
+
+    h3 {
+      color: $clr-orange;
+      font-weight: normal;
+      font-size: 1.5rem;
+    }
+
+    h4 {
+      font-weight: normal;
+      font-size: 1.5rem;
+    }
+
+    h5 {
+      font-size: 1rem;
+    }
+  }
+
+  .about__title {
+    position: absolute;
+    top: -3rem;
+    color: white;
+    font-size: 2rem;
+  }
+}

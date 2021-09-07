@@ -1,0 +1,60 @@
+.contact {
+  z-index: 1;
+
+  h3 {
+    color: $clr-white;
+    font-weight: normal;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    color: $clr-white;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    article {
+      text-align: left;
+      padding: 2rem;
+
+      h4 {
+        font-size: 2rem;
+        font-weight: normal;
+        display: flex;
+        align-items: center;
+      }
+
+      a {
+        color: $clr-orange;
+        font-size: 1.3rem;
+        transition: $transition;
+
+        &:hover {
+          color: yellow;
+        }
+      }
+
+      p {
+        color: $clr-orange;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  &__icons {
+    margin-right: 0.5rem;
+
+    &--link {
+      margin: 0.5rem;
+      transition: $transition;
+      cursor: pointer;
+      color: $clr-white;
+      font-size: 3rem;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.reviews {
+  background: $clr-grey-10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__container {
+    width: 600px;
+    height: 420px;
+    background: $clr-white;
+    border-radius: $radius;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: $light-shadow;
+
+    h4 {
+      text-transform: capitalize;
+      letter-spacing: $spacing;
+      margin-bottom: 0.25rem;
+    }
+
+    h5 {
+      font-weight: normal;
+      text-transform: uppercase;
+      color: $clr-blue-5;
+      margin-bottom: 0.25rem;
+    }
+
+    p {
+      color: $clr-grey-5;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  }
+
+  &__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 1rem;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: $clr-blue-5;
+      position: absolute;
+      top: -0.25rem;
+      right: -0.5rem;
+      border-radius: 50%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      position: relative;
+    }
+  }
+
+  &__icons {
+    &--quote {
+      position: absolute;
+      top: 10px;
+      left: -3px;
+      background: $clr-blue-5;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      color: $clr-white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__btn {
+    &--select {
+      display: flex;
+      justify-content: space-between;
+      width: 12%;
+      margin-bottom: 0.5rem;
+    }
+
+    &--prev,
+    &--next {
+      background: transparent;
+      color: $clr-blue-7;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: $transition;
+
+      &:hover {
+        color: $clr-blue-5;
+      }
+    }
+
+    &--random {
+      background: $clr-blue-10;
+      color: $clr-blue-5;
+      padding: 0.5rem;
+      border: none;
+      border-radius: $radius;
+      text-transform: capitalize;
+      cursor: pointer;
+      transition: $transition;
+
+      &:hover {
+        background: $clr-blue-5;
+        color: $clr-blue-1;
+      }
+    }
+  }
+}

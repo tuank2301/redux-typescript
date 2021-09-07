@@ -1,0 +1,43 @@
+.birthday {
+  background: $clr-pink;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    width: 450px;
+    background: $clr-white;
+    padding: 2rem;
+    border-radius: $radius;
+
+    h3 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    margin: 1rem 0rem;
+    align-items: center;
+
+    &--info {
+      margin-left: 1rem;
+      p {
+        margin-top: 0.7rem;
+      }
+    }
+
+    img {
+      height: 75px;
+      width: 75px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &__btn {
+    background: $clr-pink;
+    width: 100%;
+  }
+}
